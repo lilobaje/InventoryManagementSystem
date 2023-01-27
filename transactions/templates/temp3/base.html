@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+		<meta name="author" content="AdminKit">
+		<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="shortcut icon" href="{% static "img/icons/icon-48x48.png" %}" />
+	
+
+	
+		<title>Library</title>
+	
+		<link href="{% static "static2/css/app.css" %}" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	</head>
+</head>
+
+<body>
+	<div class="wrapper">
+		
+        {% include 'temp3/navbar.html' %}
+
+		<div class="main">
+			{% include 'temp3/pronavbar.html' %}
+
+			<!-- Main content -->
+			{% block main_content %} 
+
+			<main class="content">
+			{% include 'temp3/main.html' %}
+			</main>
+
+   
+			{% endblock main_content %}
+			
+			<footer class="footer">
+			{% include 'temp2/footer.html' %}
+			</footer>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="{% static "static2/js/app.js" %}"></script>
+
+	
+</body>
+
+</html>

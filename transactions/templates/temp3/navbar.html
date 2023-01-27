@@ -1,0 +1,86 @@
+{% load static %}
+<nav id="sidebar" class="sidebar js-sidebar">
+    <div class="sidebar-content js-simplebar">
+        <a class="sidebar-brand" href="index.html">
+  <span class="align-middle">University</span>
+</a>
+        <ul class="sidebar-nav">
+            <li class="sidebar-header">
+                PAGE
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'home' %}">
+      <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+    </a>
+            </li>
+            
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'new-stock' %}">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Add New</span>
+    </a>
+            </li>
+            
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'inventory' %}">
+            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Inventory List</span>
+             </a>
+            </li>
+
+
+          
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'select-supplier' %}">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">New Stock Supplies</span>
+    </a>
+            </li>
+     
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'purchases-list' %}">
+      <i class="align-middle" data-feather="user"></i> <span class="align-middle">Purchased Item</span>
+    </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'new-sale' %}">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">New Outgoing stock</span>
+    </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'sales-list' %}">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sale Orders</span>
+    </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'new-supplier' %}">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Add New Supplier</span>
+    </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'suppliers-list' %}">
+      <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Suppliers List</span>
+    </a>
+            </li>
+
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{% url 'about' %}">
+      <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">About</span>
+    </a>
+            </li>
+
+           
+
+
+
+        </ul>
+
+        <div class="sidebar-cta">
+            
+        </div>
+    </div>
+</nav>
