@@ -61,7 +61,7 @@ class SupplierUpdateView(SuccessMessageMixin, UpdateView):
     form_class = SupplierForm
     success_url = '/transactions/suppliers'
     success_message = "Supplier details has been updated successfully"
-    template_name = "suppliers/edit_supplier.html"
+    template_name = "temp3/edit_supply.html"
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -326,7 +326,7 @@ class PurchaseBillView(View):
 # used to display the sale bill object
 class SaleBillView(View):
     model = SaleBill
-    template_name = "bill/sale_bill.html"
+    template_name = "temp3/purchase_reciept.html"
     bill_base = "bill/bill_base.html"
     
     def get(self, request, billno):
