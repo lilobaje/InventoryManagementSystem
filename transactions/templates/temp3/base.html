@@ -41,9 +41,7 @@
    
 			{% endblock main_content %}
 			
-			<footer class="footer">
-			{% include 'temp2/footer.html' %}
-			</footer>
+			
 		</div>
 	</div>
 
@@ -51,7 +49,16 @@
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="{% static "static2/js/app.js" %}"></script>
 
-	
+	<script>
+        function printpage(divName) {
+            var printContents = document.getElementById(divName).innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }       
+        </script>
+ 
 </body>
 
 </html>

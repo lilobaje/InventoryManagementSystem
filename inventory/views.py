@@ -49,7 +49,7 @@ class StockUpdateView(SuccessMessageMixin, UpdateView):                         
 
 
 class StockDeleteView(View):                                                            # view class to delete stock
-    template_name = "delete_inv.html"                                                 # 'delete_stock.html' used as the template
+    template_name = "temp3/delete_inv.html"                                                 # 'delete_stock.html' used as the template
     success_message = "Stock has been deleted successfully"                             # displays message when form is submitted
     
     def get(self, request, pk):

@@ -264,7 +264,7 @@ class SaleCreateView(View):
 # used to delete a bill object
 class SaleDeleteView(SuccessMessageMixin, DeleteView):
     model = SaleBill
-    template_name = "sales/delete_sale.html"
+    template_name = "temp3/delete_bill.html"
     success_url = '/transactions/sales'
     
     def delete(self, *args, **kwargs):
@@ -284,15 +284,15 @@ class SaleDeleteView(SuccessMessageMixin, DeleteView):
 # used to display the purchase bill object
 class PurchaseBillView(View):
     model = PurchaseBill
-    template_name = "temp3/purchase_bill.html"
-    bill_base = "temp3/bill_base.html"
+    template_name = "temp3/purchasebill.html"
+  
 
     def get(self, request, billno):
         context = {
             'bill'          : PurchaseBill.objects.get(billno=billno),
             'items'         : PurchaseItem.objects.filter(billno=billno),
             'billdetails'   : PurchaseBillDetails.objects.get(billno=billno),
-            'bill_base'     : self.bill_base,
+           
         }
         return render(request, self.template_name, context)
 
@@ -322,10 +322,11 @@ class PurchaseBillView(View):
         }
         return render(request, self.template_name, context)
 
-
+    # template_name = "temp3/purchase_reciept.html"
 # used to display the sale bill object
 class SaleBillView(View):
     model = SaleBill
+    # template_name = "bill/sale_bill.html"
     template_name = "temp3/purchase_reciept.html"
     bill_base = "bill/bill_base.html"
     
