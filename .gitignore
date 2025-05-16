@@ -1,0 +1,20 @@
+# Ignore the virtual environment folder
+env/
+
+# Optional: You might also want to ignore other common things
+# Database file
+*.sqlite3
+
+# Bytecode files
+__pycache__/
+
+# Django's media and static root if they are outside of your app directories
+# media/
+# staticfiles/
+
+# IDE files (e.g., VS Code)
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
