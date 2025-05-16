@@ -1,5 +1,6 @@
 # Ignore the virtual environment folder
-env/
+.venv
+.env
 
 # Optional: You might also want to ignore other common things
 # Database file
